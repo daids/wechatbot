@@ -1,0 +1,4 @@
+﻿  botwin.cpp
+E:\wechatbot\bot\lib\arris\util\json_util.hpp(69,27): warning C4101: “e”: 未引用的局部变量
+E:\wechatbot\bot\lib\arris\util\json_util.hpp(82,27): warning C4101: “e”: 未引用的局部变量
+  bot.vcxproj -> E:\wechatbot\bot\Debug\bot.dll

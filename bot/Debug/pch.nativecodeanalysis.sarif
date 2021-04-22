@@ -1,0 +1,68 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.28.29914.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"D:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29910\\bin\\HostX86\\x86\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x00DFB1C0 -il C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\_CL_8f33837dast -typedil -f pch.cpp -Ze -D_MSC_EXTENSIONS -Zp8 -Gs -pc \\:/ -D_MSC_VER=1928 -D_MSC_FULL_VER=192829914 -D_MSC_BUILD=0 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -GR -D_CPPRTTI -nologo -W 3 -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DCODE_ANALYSIS -DWIN32 -D_WINDOWS -D_DEBUG -D_USRDLL -D_WINDLL -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -MTd -clrNoPureCRT -D_DEBUG -D_MT -GS -D_M_FP_PRECISE -Zc:wchar_t -Zc:forScope -Ycpch.h -FpDebug\\bot.pch -FoDebug\\pch.obj -FdDebug\\vc142.pdb -Gd -analyze:projectdirectory E:\\wechatbot\\bot\\bot -analyze:rulesetdirectory ;D:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset D:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin D:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29910\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I E:\\code\\boost_1_74_0 -I C:\\Users\\Administrator\\Downloads\\bot\\include -I C:\\Users\\Administrator\\Downloads\\bot\\lib -I D:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29910\\include -I D:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29910\\atlmfc\\include -I D:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I D:\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I D:\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I D:\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I D:\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I D:\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I E:\\wechatbot\\bot\\bot\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///e:/wechatbot/bot/bot/pch.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "62bbacabb556926f6bd7b2b08489b811"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/wechatbot/bot/bot/pch.h"
+          },
+          "hashes": {
+            "md5": "8faa597ad5143cb64ca6dbe21d4ebb1a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/wechatbot/bot/bot/framework.h"
+          },
+          "hashes": {
+            "md5": "4a4f7039ed4be8f9835c5fc3f4767add"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/wechatbot/bot/bot/targetver.h"
+          },
+          "hashes": {
+            "md5": "4fbd350a5d4f4466398268a13a582bac"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/wechatbot/bot/bot/botwin.h"
+          },
+          "hashes": {
+            "md5": "ea5e1417f7e78d739b764adb05845b0f"
+          }
+        }
+      ]
+    }
+  ]
+}

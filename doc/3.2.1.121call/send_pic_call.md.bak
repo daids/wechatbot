@@ -1,0 +1,29 @@
+6863CB6F     | 83EC 14           | sub esp,14                           |
+6863CB72     | 8D47 E0           | lea eax,dword ptr ds:[edi-20]        |
+6863CB75     | 8BCC              | mov ecx,esp                          |
+6863CB77     | 8965 BC           | mov dword ptr ss:[ebp-44],esp        |
+6863CB7A     | 50                | push eax                             |
+6863CB7B     | E8 60FE4700       | call wechatwin.68ABC9E0              |
+6863CB80     | 53                | push ebx                             |
+6863CB81     | 8D85 78FFFFFF     | lea eax,dword ptr ss:[ebp-88]        |
+6863CB87     | C645 FC 09        | mov byte ptr ss:[ebp-4],9            | 9:'\t'
+6863CB8B     | 50                | push eax                             |
+6863CB8C     | 8D85 B0FCFFFF     | lea eax,dword ptr ss:[ebp-350]       |
+6863CB92     | 50                | push eax                             |
+6863CB93     | E8 886BF5FF       | call wechatwin.68593720              |
+6863CB98     | 8BC8              | mov ecx,eax                          |
+6863CB9A     | C645 FC 01        | mov byte ptr ss:[ebp-4],1            |
+6863CB9E     | E8 BD832A00       | call wechatwin.688E4F60              |
+
+
+
+68ABC9E0-68530000=58C9E0
+68593720-68530000=63720
+688E4F60-68530000=3B4F60
+
+
+Base=68530000
+Module=wechatwin.dll
+Party=User
+Path=C:\Program Files (x86)\Tencent\WeChat\WeChatWin.dll
+Status=Unloaded

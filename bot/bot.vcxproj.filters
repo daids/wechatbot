@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="readme">
+      <UniqueIdentifier>{368a9a75-3a6c-4f07-af75-13bb984352a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arris">
+      <UniqueIdentifier>{dc8d9d77-d433-4ffd-ae8c-c247e17d6cdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arris\net">
+      <UniqueIdentifier>{2796b2e1-165a-4336-bfbe-f65099c03219}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arris\mgr">
+      <UniqueIdentifier>{5ad911bc-c081-4f50-ac19-c9a35f389cdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arris\wechat">
+      <UniqueIdentifier>{30b2cc5f-724e-46f5-bd22-29d9ae894e9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arris\thread">
+      <UniqueIdentifier>{4a5abb70-9e65-4063-85e6-30af70a57522}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arris\util">
+      <UniqueIdentifier>{f6199e05-166a-42db-9123-ba2ae8f1a951}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arris\hookmsg">
+      <UniqueIdentifier>{91dc722c-2d5f-4622-ba98-8cca38487f2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="doc">
+      <UniqueIdentifier>{fee52322-19f0-4464-a9ba-db8762a07def}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="doc\3.2.1.121">
+      <UniqueIdentifier>{7da20a95-d5b9-452e-a7cc-b4d179c1a45a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bot.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="botwin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bot.def">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="res\bot.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\readme.md">
+      <Filter>readme</Filter>
+    </None>
+    <None Include="2.8call.md">
+      <Filter>readme</Filter>
+    </None>
+    <None Include="knowledge.md">
+      <Filter>readme</Filter>
+    </None>
+    <None Include="..\doc\3.2.1.121\atmsg.md">
+      <Filter>doc\3.2.1.121</Filter>
+    </None>
+    <None Include="..\doc\3.2.1.121\send_txt_msg.md">
+      <Filter>doc\3.2.1.121</Filter>
+    </None>
+    <None Include="..\doc\3.2.1.121\recv_msg.md">
+      <Filter>doc\3.2.1.121</Filter>
+    </None>
+    <None Include="..\doc\3.2.1.121call\personal_detail_fom_wxid.md">
+      <Filter>doc</Filter>
+    </None>
+    <None Include="..\doc\3.2.1.121call\friend_detail_from_wxid_another_inuse.md">
+      <Filter>doc</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="bot.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="botwin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\arris\net\server.hpp">
+      <Filter>arris\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\arris\mgr\handlemsg.hpp">
+      <Filter>arris\mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\arris\mgr\mgr.hpp">
+      <Filter>arris\mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\arris\mgr\msgmgr.hpp">
+      <Filter>arris\mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\arris\wechat\personal_info.hpp">
+      <Filter>arris\wechat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\arris\thread\wxthread.hpp">
+      <Filter>arris\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\arris\wechat\msgdispatch.hpp">
+      <Filter>arris\wechat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\arris\util\json_util.hpp">
+      <Filter>arris\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\arris\wechat\contact.hpp">
+      <Filter>arris\wechat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\arris\wechat\base.hpp">
+      <Filter>arris\wechat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\arris\wechat\contact_tree.hpp">
+      <Filter>arris\wechat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\arris\wechat\chatroom.hpp">
+      <Filter>arris\wechat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\arris\wechat\chatroom_tree.hpp">
+      <Filter>arris\wechat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\arris\wechat\sendtxtmsg.hpp">
+      <Filter>arris\wechat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\arris\wechat\room_nick.hpp">
+      <Filter>arris\wechat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\arris\wechat\sendpic.hpp">
+      <Filter>arris\wechat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\arris\hook\hook.hpp">
+      <Filter>arris\hookmsg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\arris\hook\txtmsg_hook.hpp">
+      <Filter>arris\hookmsg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\arris\util\hook.hpp">
+      <Filter>arris\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\arris\wechat\attatch.hpp">
+      <Filter>arris\wechat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\arris\wechat\constant.hpp">
+      <Filter>arris\wechat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\arris\wechat\atmsg.hpp">
+      <Filter>arris\wechat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\arris\wechat\offset_version.hpp">
+      <Filter>arris\wechat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\arris\util\str_util.hpp">
+      <Filter>arris\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\arris\mgr\mgrnew.hpp">
+      <Filter>arris\mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\arris\wechat\txl.hpp">
+      <Filter>arris\wechat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\arris\hook\friend_request.hpp">
+      <Filter>arris\hookmsg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\arris\hook\agree_friend_request.hpp">
+      <Filter>arris\hookmsg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\arris\wechat\friend_detail.hpp">
+      <Filter>arris\wechat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\arris\util\log_util.hpp">
+      <Filter>arris\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\arris\util\read_mem.hpp">
+      <Filter>arris\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\arris\wechat\detail.hpp">
+      <Filter>arris\wechat</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="bot.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
