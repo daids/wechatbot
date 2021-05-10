@@ -687,3 +687,35 @@
 66C2D1CD     | 8BE5              | mov esp,ebp                          |
 66C2D1CF     | 5D                | pop ebp                              |
 66C2D1D0     | C2 1800           | ret 18                               |
+
+
+
+
+527D9CD2    FFB5 74F8FFFF   push dword ptr ss:[ebp-0x78C]            ; 3
+527D9CD8    8D85 78FFFFFF   lea eax,dword ptr ss:[ebp-0x88]          ; 空白指针
+527D9CDE    50              push eax
+527D9CDF    8D85 64FFFFFF   lea eax,dword ptr ss:[ebp-0x9C]          ; 歌曲的图片地址
+527D9CE5    50              push eax
+527D9CE6    8D85 20FFFFFF   lea eax,dword ptr ss:[ebp-0xE0]          ; xml内容
+527D9CEC    50              push eax
+527D9CED    53              push ebx                                 ; 接收者VXID
+527D9CEE    8D85 50F9FFFF   lea eax,dword ptr ss:[ebp-0x6B0]         ; 发送人VXID
+527D9*F    50              push eax
+527D9*F    8D85 28FDFFFF   lea eax,dword ptr ss:[ebp-0x2D8]         ; 空白指针
+527D9*F    50              push eax
+527D9*F    E8 DFDDFFFF     call WeChatWi.527D7AE0                   ; 发送xmlcall
+
+
+
+
+02FF3875 | FFB5 C4F2FFFF            | push dword ptr ss:[ebp-D3C]             |
+02FF387B | 8D85 78FFFFFF            | lea eax,dword ptr ss:[ebp-88]           |
+02FF3881 | 50                       | push eax                                |
+02FF3882 | 8D85 64FFFFFF            | lea eax,dword ptr ss:[ebp-9C]           |
+02FF3888 | 50                       | push eax                                |
+02FF3889 | 8D85 20FFFFFF            | lea eax,dword ptr ss:[ebp-E0]           |
+02FF388F | 50                       | push eax                                |
+02FF3890 | 57                       | push edi                                |
+02FF3891 | 8D95 A0F3FFFF            | lea edx,dword ptr ss:[ebp-C60]          |
+02FF3897 | 8D8D B0FCFFFF            | lea ecx,dword ptr ss:[ebp-350]          |
+02FF389D | E8 BEDDFFFF              | call wechatwin.2FF1660                  |

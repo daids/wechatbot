@@ -2,7 +2,6 @@
 
 #include <arris/wechat/base.hpp>
 #include <arris/wechat/constant.hpp>
-//#include <arris/wechat/msgtoqueue.hpp>
 #include <arris/util/log_util.hpp>
 #include <arris/wechat/offset_version.hpp>
 #include <arris/util/str_util.hpp>
@@ -17,7 +16,6 @@ namespace wechat {
 class send_txt_msg :public iwxmsg {
 public:
 	send_txt_msg() {
-		//msgtoqueue_ = std::make_unique<msgtoqueue>();
 		tinyjson_ptr_ = std::make_unique<tinyjson>();
 		type_ = static_cast<int>(MsgType::kSendTxtMsg);
 	}
@@ -28,7 +26,6 @@ public:
 	virtual std::string handle_msg(const wx_msg& v_st_msg) override {
 		std::string msg= send_to(v_st_msg);
 		return msg;
-		//msgtoqueue_->send_to_queue(msg);
 	}
 
 private:
@@ -78,8 +75,6 @@ private:
 		}
 		catch (...)
 		{
-			//__OutputDebugString(TEXT("send txt msg:asm execution error!\n"));
-			//__OutputDebugString(TEXT("line:%d,file:%s,func:%s\n"), __LINE__, TEXT(__FILE__), TEXT(__FUNCTION__));
 			return tinyjson_ptr_->ret_msg(v_st_msg.id, kMsgFailedStatus,"send txt msg:asm execution error", static_cast<int>(MsgType::kSendTxtMsg));
 		}
 
@@ -89,9 +84,7 @@ private:
 	}
 private:
 	int type_;
-	//msgtoqueue_ptr msgtoqueue_;
 	tinyjson_ptr tinyjson_ptr_;
-
 };
 
 }

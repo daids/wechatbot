@@ -27,7 +27,7 @@ namespace arris {
 				wx_headimg=0x130//0x130+0x4 length
 			};
 
-			enum class hook_common_offset {//3.2.1.151
+			enum class hook_common_offset {//3.2.1.154
 				hook_point_offset = 0x3DF42C,
 				call_offset = 0x87A70
 			};
@@ -45,9 +45,12 @@ namespace arris {
 			enum class hook_friendrequest_offset {
 				msg_content_offset=0x68
 			};
-			enum class send_txtmsg_offset {//3.2.1.121
-				send_call_addr = 0x3B56A0,
+			enum class send_txtmsg_offset {//3.2.1.154
+				send_call_addr = 0x10CCFB,
+			};
 
+			enum class send_xmlmsg_offset {
+				call_addr = 0x2C389D
 			};
 			
 			enum class wx_personal_info {

@@ -116,8 +116,6 @@ namespace arris {
                 try {
    
                     std::string result = handlemsg_->msg(msg->get_payload());
-                    //std::wstring output_str = string_to_wstring(result);
-                    //__OutputDebugString(TEXT("debug info:"), output_str.c_str());
                     msgdispatch_->send_to_queue(result);
                 }
                 catch (websocketpp::exception const& e) {

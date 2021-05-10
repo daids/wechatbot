@@ -6,3 +6,4 @@
 /bot/Release
 /bot/x64/Debug
 /Release
+/include/websocketpp/out/build/x64-Debug

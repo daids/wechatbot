@@ -26,7 +26,7 @@ public:
 		bool js_json_type = tinyjson_->is_json(msg);
 		if (js_json_type == true) {
 			int type = tinyjson_->get_type(msg);
-			wx_msg st_msg = tinyjson_->get_st(msg);
+			wx_msg st_msg = tinyjson_->get_st(msg);=
 			__OutputDebugString(TEXT("handle_msg type:%d"),type);
 			//__OutputDebugString();
 			return msgmgr_->run(type, st_msg);
